@@ -3,3 +3,5 @@
 TODO
 
 LICENSE.md
+^.*\.Rproj$
+^\.Rproj\.user$

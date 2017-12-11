@@ -69,7 +69,7 @@ int svm_pegasos_fit(const svmdata_t *const restrict data, const svmparam_t *cons
   for (iter_t t=1; t<=params->niter; t++)
   {
     const double invt = 1.0 / ((double) t);
-    const len_t index = sample_unif(0, n);
+    const len_t index = t-1;
     
     // NOTE to self: if x is transposed...
     // const double tmp = y[index] * vecvecprod(ROW_MAJOR, intercept, n, w_len, x+(index*p), w);
